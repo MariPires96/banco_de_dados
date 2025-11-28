@@ -1,151 +1,61 @@
-# 📚 Exercícios de Banco de Dados – MySQL
+# 📦 Projetos SQL — Generation Brasil
 
-Repositório destinado às atividades práticas de SQL realizadas no **MySQL Workbench**, incluindo criação de bancos, tabelas, inserção de dados, relacionamentos, consultas e atualizações.
-
-Todas as atividades fazem parte do treinamento da **Generation Brasil** na trilha Full Stack.
-
----
-
-# 📝 Atividade 01 – Sistema de RH
-
-## 🎯 Objetivo
-Criar um sistema simples de RH para gestão de colaboradores e cargos.
-
-## ✔ Conteúdos realizados
-
-### 🏗 Criação das tabelas
-- Banco **db_rh**
-- Tabela **tb_colaboradores** com:
-  - id  
-  - nome  
-  - data_nascimento  
-  - salario  
-  - email  
-
-- Tabela **tb_cargos** com:
-  - id  
-  - cargo  
-
-### 🧩 Relacionamento
-- `tb_colaboradores.cargo_id` → FOREIGN KEY → `tb_cargos.id`
-
-### 📝 Registros inseridos
-- 5 colaboradores
-- 3 cargos
-
-### 🔄 Atualizações realizadas
-- Atualização salarial utilizando `UPDATE` com `CASE`
-- Associação dos colaboradores aos cargos
-
-### 🔍 Consultas realizadas
-- SELECT completo da tabela
-- SELECT de salários > 2000
-- SELECT de salários < 2000
-- JOIN entre colaboradores e cargos
-
-📄 **Script:** `db_rh.sql`
+Este repositório reúne todos os projetos e exercícios desenvolvidos durante meus estudos de Banco de Dados na Generation Brasil.  
+Aqui você encontrará a criação de bancos de dados completos, com tabelas, chaves estrangeiras, consultas, filtros, ordenações e relacionamentos.
 
 ---
 
-# 🛒 Atividade 02 – Sistema de E-commerce
+## 🧱 O que você encontrará neste repositório
 
-## 🎯 Objetivo
-Desenvolver um banco de dados para armazenar produtos e categorias de um e-commerce.
-
-## ✔ Conteúdos realizados
-
-### 🏗 Criação das tabelas
-- Banco **db_ecommerce**
-- Tabela **tb_categorias**
-- Tabela **tb_produtos**, contendo:
-  - id  
-  - nome_produto  
-  - preco  
-  - quantidade  
-  - categoria_id (foreign key)
-
-### 🧩 Relacionamento
-- `tb_produtos.categoria_id` → FOREIGN KEY → `tb_categorias.id`
-
-### 📝 Registros inseridos
-- 2 categorias
-- 11 produtos distintos
-
-### 🔍 Consultas realizadas
-- SELECT geral de produtos
-- SELECT produtos com preço > 500
-- SELECT produtos com preço < 500
-
-📄 **Script:** `db_ecommerce.sql`
+- Criação de bancos de dados (DDL)  
+- Inserção e manipulação de dados (DML)  
+- Consultas com filtros, ordenações e funções (DQL)  
+- Uso de **FOREIGN KEY** e relacionamentos **1:N**  
+- Uso de comandos como:
+  - `CREATE DATABASE`
+  - `CREATE TABLE`
+  - `INSERT INTO`
+  - `UPDATE`
+  - `DELETE`
+  - `JOIN`
+  - `LIKE`
+  - `BETWEEN`
+  - `ORDER BY`
 
 ---
 
-# 🏫 Atividade 03 – Sistema Escolar
+## 📁 Estrutura Geral dos Arquivos
 
-## 🎯 Objetivo
-Criar um banco de dados para registrar informações dos estudantes de uma escola.
+Cada pasta contém:
 
-## ✔ Conteúdos realizados
-
-### 🏗 Criação da tabela
-- Banco **db_escola**
-- Tabela **tb_estudantes** com:
-  - id  
-  - nome  
-  - nota  
-  - data_nascimento  
-  - turma  
-  - responsavel  
-
-### 📝 Registros inseridos
-- 9 estudantes cadastrados com diferentes notas
-
-### 🔍 Consultas realizadas
-- Estudantes com nota > 7.0  
-- Estudantes com nota < 7.0  
-- Estudante com **maior nota**  
-- Estudante com **menor nota**
-
-📄 **Script:** `db_escola.sql`
+- Um banco de dados temático  
+- Criação das tabelas  
+- Inserções iniciais  
+- Consultas para análise dos dados  
+- Relacionamentos quando necessários  
 
 ---
 
-# 📂 Estrutura do Repositório
-/
-├── db_rh.sql
-├── db_ecommerce.sql
-├── db_escola.sql
-└── README.md
+## 🛠️ Tecnologias e Ferramentas
+
+- **MySQL Server**
+- **MySQL Workbench**
+- SQL (DDL, DML, DQL)
 
 ---
 
-# 🛠 Tecnologias Utilizadas
+## 🎯 Objetivo dos Projetos
 
-- MySQL Server  
-- MySQL Workbench  
-- Git & GitHub  
-
----
-
-# ▶ Como Executar os Scripts
-
-1. Abra o **MySQL Workbench**  
-2. Vá em **File → Open SQL Script**  
-3. Selecione o arquivo desejado  
-4. Execute com **CTRL + SHIFT + ENTER**
+- Aprender modelagem de dados  
+- Praticar criação de relacionamentos  
+- Desenvolver consultas profissionais em SQL  
+- Simular cenários reais de empresas e sistemas  
 
 ---
 
-# 🎓 Finalidade
+## 👩‍💻 Autora
 
-Este repositório demonstra a aplicação prática dos conceitos fundamentais de:
-
-- Modelagem de banco de dados  
-- Criação e manipulação de tabelas  
-- Consultas SQL  
-- Relacionamentos entre tabelas  
-- Comandos DDL e DML  
-
-Atividades realizadas durante o bootcamp **Generation Brasil – Full Stack JavaScript**.
+**Mariana Barbosa Pires**  
+Desenvolvedora Full Stack JavaScript — Generation Brasil  
 
 ---
